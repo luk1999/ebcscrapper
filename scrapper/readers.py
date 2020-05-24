@@ -54,7 +54,7 @@ class CurrencyRateReader:
     def _parse_entry(self, entry):
         """
         :type entry: dict
-        :rtype: entities.CurrencyRateEntry
+        :rtype: scrapper.entities.CurrencyRateEntry
         """
         try:
             summary_detail = entry['summary_detail']
