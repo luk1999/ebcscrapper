@@ -1,7 +1,6 @@
 # Local development
 ## Requirements
-Application was developed using Python 3.8, but it will probably work with 3.6 or 3.7 too 
-(not tested.)
+Application was developed using Python 3.8, but it will probably work with 3.7 too (not tested.)
 
 App uses SQLite db for now, so there's no need to install additional db client libraries.
 

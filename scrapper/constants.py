@@ -1,0 +1,5 @@
+CURRENCIES = (
+    # 'usd',
+    'jpy',
+    # 'pln'
+)
