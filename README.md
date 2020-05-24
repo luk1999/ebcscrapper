@@ -18,11 +18,16 @@ Install Python libraries:
 pip install -r requirements.txt
 ```
 
+Run migrations:
+```bash
+python3 manage.py migrate
+```
+
 ## Run project
 
 Run:
 ```bash
-python3.8 manage.py runserver
+python3 manage.py runserver
 ``` 
 
 and then open in your web browser:

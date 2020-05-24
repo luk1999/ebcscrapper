@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Currency(models.Model):
-    symbol = models.CharField(max_length=3)
+    symbol = models.CharField(max_length=3, unique=True)
     name = models.CharField(max_length=30)
 
 
