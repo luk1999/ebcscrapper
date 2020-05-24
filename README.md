@@ -30,7 +30,12 @@ Run:
 python3 manage.py runserver
 ``` 
 
-and then open in your web browser:
+Import rates:
+```bash
+python3 manage.py scrap_ebc
+```
+
+Then open in your web browser:
 ```
 http://127.0.0.1:8000/api/v1/
 ```
