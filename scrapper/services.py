@@ -1,7 +1,13 @@
 from . import (
-    constants,
     readers,
     writers,
+)
+
+CURRENCIES_TO_IMPORT = (
+    'usd',
+    'jpy',
+    'pln',
+    'gbp',
 )
 
 
@@ -10,6 +16,6 @@ class ScrapperService:
     def save_latest_rates():
         reader = readers.CurrencyRateReader()
         writer = writers.CurrencyRateWriter()
-        for currency in constants.CURRENCIES:
+        for currency in CURRENCIES_TO_IMPORT:
             entry = reader.get_latest(currency)
             writer.save(entry)

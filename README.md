@@ -34,8 +34,21 @@ Import rates:
 ```bash
 python3 manage.py scrap_ebc
 ```
+You can extend list of imported data by adding items to `CURRENCIES_TO_IMPORT` tuple in 
+`/scrapper/services.py`.
 
-Then open in your web browser:
+Then open list of available currencies in your web browser:
 ```
-http://127.0.0.1:8000/api/v1/
+http://127.0.0.1:8000/api/v1/currency/
 ```
+
+Choose one (`symbol`) and open:
+```
+http://127.0.0.1:8000/api/v1/currency/rate/<symbol>-EUR/
+```
+Eg. use this to get latest USD-EURO rates:
+```bash
+http://127.0.0.1:8000/api/v1/currency/rate/USD-EUR/
+```
+
+

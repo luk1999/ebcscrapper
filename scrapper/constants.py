@@ -1,5 +1,0 @@
-CURRENCIES = (
-    # 'usd',
-    'jpy',
-    # 'pln'
-)
