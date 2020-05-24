@@ -15,7 +15,9 @@ class CurrencyViewSet(viewsets.ReadOnlyModelViewSet):
 
 class CurrencyRateView(generics.GenericAPIView):
     serializer_class = serializers.CurrencyRateSerializer
-    queryset = models.CurrencyRate.objects.order_by('-updated_at')
+    queryset = models.CurrencyRate.objects.select_related(
+        'currency', 'main_currency'
+    ).order_by('-updated_at')
     lookup_field = 'currency'
 
     def get_queryset(self):
